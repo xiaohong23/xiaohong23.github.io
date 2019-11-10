@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<TITLE>PDZ domain of Sipa1</title>
+<SCRIPT SRC="./Jmol.js"></SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<SCRIPT>
+jmolInitialize(".")
+</SCRIPT>
+<br><br>
+<center>
+<table BORDER=0 COLS=2 WIDTH=1000>
+<tr><td><center>
+<SCRIPT>
+jmolApplet(400,"load DBA.pdf;select *;wireframe off;spacefill off;cartoon on;color structure;select 32;spacefill;color cpk;spin on")
+</SCRIPT>
+<br><br><br>
+<SCRIPT>
+jmolCheckbox("set spin y 45;spin on","spin off","Turn spin on/off","isChecked")
+</SCRIPT>
+<br>
+<SCRIPT>
+jmolRadioGroup(
+[["select *;color cpk","cpk"],
+["select *;color structure","structure","isChecked"],
+["select *;color temperature","temperature"],
+["select *;color green","green"],
+["select *;color blue","Blue"],
+["select *;color red","red"]],"<br>")
+</SCRIPT>
+<br>
+<SCRIPT>
+jmolMenu(
+[["select *;spacefill on","spacefill"],
+["select *;spacefill off;cartoon off;spacefill 100;wireframe 50;select 32;spacefill;color cpk","ball and stick"],
+["select *;spacefill off;cartoon off;wireframe 50;select 32;spacefill;color cpk","sticks"],
+["select *;spacefill off;wireframe off;cartoon on;select 32;spacefill;color cpk","cartoon","isChecked"],
+["select *;spacefill off;cartoon off;wireframe on;select 32;spacefill;color cpk","wireframe"]],1)
+</SCRIPT>
+<td><center>
+<SCRIPT>
+jmolApplet(400,"load FVB.pdf;select *;wireframe off;spacefill off;cartoon on;color structure;select 32;spacefill;color cpk;spin on")
+</SCRIPT>
+<br><br><br>
+<SCRIPT>
+jmolCheckbox("set spin y 45;spin on","spin off","Turn spin on/off","isChecked")
+</SCRIPT>
+<br>
+<SCRIPT>
+jmolRadioGroup(
+[["select *;color cpk","cpk"],
+["select *;color structure","structure","isChecked"],
+["select *;color temperature","temperature"],
+["select *;color green","green"],
+["select *;color blue","Blue"],
+["select *;color red","red"]],"<br>")
+</SCRIPT>
+<br>
+<SCRIPT>
+jmolMenu(
+[["select *;spacefill on","spacefill"],
+["select *;spacefill off;cartoon off;spacefill 100;wireframe 50;select 32;spacefill;color cpk","ball and stick"],
+["select *;spacefill off;cartoon off;wireframe 50;select 32;spacefill;color cpk","sticks"],
+["select *;spacefill off;wireframe off;cartoon on;select 32;spacefill;color cpk","cartoon","isChecked"],
+["select *;spacefill off;cartoon off;wireframe on;select 32;spacefill;color cpk","wireframe"]],1)
+</SCRIPT>
+</center></td></tr></table>
+<table width=800>
+<br><br>
+<tr>
+<H1><center>PDZ domain of Sipa1</center></H1>
+<p>This is three dimensional structure of PDZ domain of Sipa1 (signal induced proliferation associated protein).  
+<p>The polymorphism is located in the helical structure within PDZ domain. Ala for DBA (left panel) and Thr for FVB (right panel), represented by spacefill.
+<p>Use your left mouse button to rotate, middle mouse button to zoom in and out, and right mouse button to see more options. 
+<p> The structure of DBA and FVB sipa1 was done by SwissModel.  
+<p> The structure is displayed by <a href="http://jmol.sourceforge.net/">Jmol applet.</a> 
+<br><br><br>
+</tr>
+</table>
+</center>
+</FORM>
+</BODY>
+</HTML>

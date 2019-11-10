@@ -1,0 +1,38 @@
+<html>
+<head><title>Microarray Data</title>
+<body background="background.jpg">
+<br>
+<br><br>
+<p><h1><center>Microarray Data of Expressing Short Form Sipa1</center></h1>
+<form method="POST" 
+      action="3Aform.php">
+<br><br><br>
+<font size=3><b>Criteria for selecting differentially expressed genes:
+<br><br>
+<select name="selection">
+<option value="PValue" >P Value
+<option value="Log2Diff">Log2 Difference
+<option value="PValueLog">P Value and Log2 Difference
+</select>
+
+<br><br><br><br>
+Please input the cutoff p value for differentially expressed genes (between 0 and 1, default is 0.05).
+<br><br>
+p value: 
+<input type="text" name="Pcutoff" value=0.05>
+
+<br><br>
+Please input the log2 difference cutoff value for differentially expressed genes (between -infinit and infinite, default is 1).
+
+<br><br>
+Log2 Difference: 
+<input type="text" name="Lcutoff" value=1>
+
+<br><br><br><br></font></b>
+
+<input type="submit" value="Submit">
+<input type="reset" value="reset">
+</form>
+
+</body>
+</html>

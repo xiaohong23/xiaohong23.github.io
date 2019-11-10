@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<TITLE>The interaction of AQP2 and PDZ domain of Sipa1</title>
+<SCRIPT SRC="./Jmol.js"></SCRIPT>
+</HEAD>
+<body>
+<br><br>
+<FORM>
+<SCRIPT>
+jmolInitialize(".")
+</SCRIPT>
+<center>
+<SCRIPT>
+jmolApplet(500,"load AQPDBAID.pdf;select :a;wireframe off; spacefill off;cartoon on; color structure;select :b;select 32:b;spacefill;color cpk;spin on")
+</SCRIPT>
+<br>
+<br>
+<SCRIPT>
+jmolCheckbox("set spin y 45;spin on","spin off","Turn spin on/off","isChecked")
+</SCRIPT>
+
+<table BORDER=0 COLS=2 WIDTH=500>
+<TR>
+<TD>
+<br>
+<p>The following controls the display of AQP2 protein.<br>
+<SCRIPT>
+jmolRadioGroup(
+[["select :a;color cpk","cpk"],
+["select :a;color structure","structure","isChecked"],
+["select :a;color temperature","temperature"],
+["select :a;color green","green"],
+["select :a;color blue","Blue"],
+["select :a;color red","red"]],"<br>")
+</SCRIPT>
+<br>
+<SCRIPT>
+jmolMenu(
+[["select :a;spacefill on","spacefill"],
+["select :a;spacefill off;cartoon off;spacefill 100;wireframe 50;select Ala32;spacefill;color cpk","ball and stick"],
+["select :a;spacefill off;cartoon off;wireframe 50;select Ala32;spacefill;color cpk","sticks"],
+["select :a;spacefill off;wireframe off;cartoon on;select Ala32;spacefill;color cpk","cartoon","isChecked"],
+["select :a;spacefill off;cartoon off;wireframe on;select Ala32;spacefill;color cpk","wireframe"]],1)
+</SCRIPT></TD>
+<TD>
+<br>
+<p>The following controls the display of sipa1 PDZ domain.<br>
+<SCRIPT>
+jmolRadioGroup(
+[["select :b;color cpk","cpk","isChecked"],
+["select :b;color structure","structure"],
+["select :b;color temperature","temperature"],
+["select :b;color green","green"],
+["select :b;color blue","Blue"],
+["select :b;color red","red"]],"<br>")
+</SCRIPT>
+<br>
+<SCRIPT>
+jmolMenu(
+[["select :b;spacefill on","spacefill"],
+["select :b;spacefill off;cartoon off;spacefill 100;wireframe 50;select 223:b;spacefill;color cpk","ball and stick","isChecked"],
+["select :b;spacefill off;cartoon off;wireframe 50;select 223:b;spacefill;color cpk","sticks"],
+["select :b;spacefill off;wireframe off;cartoon on;select 223:b;spacefill;color cpk","cartoon"],
+["select :b;spacefill off;cartoon off;wireframe on;select 223:b;spacefill;color cpk","wireframe"]],1)
+</SCRIPT></TD></TR>
+<TR>
+<br>
+<p> The interaction between AQP2 and the PDZ domain of sipa1 is modeled by <a href="http://www.bmm.icnet.uk/docking/">3D-Dock</a>, developed by Henry Gabb (version 1.0) and Gidon Moont (version 2.0).   The program was provided and run on <a href="http://www.abcc.ncifcrf.gov/">Advanced biomedical computer center.</a>  The structure is displayed by <a href="http://jmol.sourceforge.net/">Jmol applet.</a> 
+</TR></TABLE><br><br><br>
+</center>
+</FORM>
+</BODY>
+</HTML>
